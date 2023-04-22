@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_height="544dp"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <TextView
+            style="@style/headerTextPrimary"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Complaint Form" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                style="@style/modifiedEditText"
+                android:padding="15dp"
+                android:hint="Name"
+                android:inputType="text"
+                android:id="@+id/comp_name"
+                android:textSize="15dp"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                style="@style/modifiedEditText"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:hint="Mobile Number"
+                android:inputType="text"
+                android:id="@+id/comp_contact"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+
+
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                style="@style/modifiedEditText"
+                android:hint="@string/login_email_hint"
+                android:textSize="15dp"
+                android:id="@+id/comp_email"
+                android:inputType="textEmailAddress"
+                android:padding="15dp"
+                android:maxLines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_width="369dp"
+            android:layout_height="97dp"
+            android:layout_marginTop="@dimen/signup_text_margin_top">
+
+            <EditText
+                android:id="@+id/comp_query"
+                style="@style/modifiedEditText"
+                android:layout_height="81dp"
+                android:inputType="textMultiLine"
+                android:hint="Explain your Query here"
+                android:maxLines="4"
+                android:padding="15dp"
+                android:textSize="15dp"
+                android:textStyle="normal" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            style="@style/loginButton"
+            android:id="@+id/complaint_btn"
+            android:layout_gravity="center"
+            android:text="Raise Complaint" />
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
